@@ -1,0 +1,11 @@
+<% if @user %>
+<div class="row">
+  <div class="col-lg-offset-3 col-lg-6">
+    <%= form_tag action: :destroy, method: :delete %>
+    <div class="text-left">
+      <p><%= @user.id %></p>
+    </div>
+    <%= submit_tag 'Logout' %>
+  </div>
+</div>
+<% end %>
